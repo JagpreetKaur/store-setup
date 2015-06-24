@@ -1,0 +1,125 @@
+input,div, select{
+	border-radius: 0px !important;
+}
+
+label{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.asterisk{
+	color: red;
+}
+
+.intro{
+	background-color: #F4F8FA;
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-top: 10px; 
+	padding-bottom: 10px;
+	border-left: 3px solid;
+	border-color: #5BC0DE;
+}
+
+.well{
+	background-color: #fcfcfc;
+	margin: 10px;
+	margin-left: 5px;
+	
+	padding-bottom: 10px;
+}
+
+.introh3{
+	color: #5BC0DE;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.paypal{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.paypal-edit-btn{
+	float:right;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+}
+
+.paypal-edit-close{
+	float:right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.paypal-edit-account-well{
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+
+.credit-card-gateway{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.credit-card-gateway-title-span{
+	font-size: 15px;
+	color: #ddd;
+}
+
+.credit-card-gateway-dotnet-config{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-left: 40px;
+	margin-right: 50px;
+	
+}
+
+.credit-card-gateway-payflow-config{
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ddd;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+
+.credit-card-gateway-dotnet-config-activate-btn{
+	float: left;
+	left: 5px;
+	margin-bottom: 20px;
+}
+
+.credit-card-gateway-dotnet-config-addAccount-btn{
+	float:right;
+	right: 5px;
+}
+
+.credit-card-gateway-payflow-config-editAccount-btn{
+	float:right;
+	right: 5px;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+.form-control{
+	color: #808080;
+}

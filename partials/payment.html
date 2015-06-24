@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>payment</title>
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/payment.css">
+
+        
+        
+
+        
+
+        
+    </head>
+    <body ng-app="" >
+        <div class="well col-md-12">
+            <div class="intro">
+                <h4 class="introh3" >Why is payment information important?</h4>
+                <p>The payment information will help to set up the payment gateway for credit card acceptance. Along with a payment gateway, you can have a Paypal account integrated with the system as an additional method for accepting payment.</p>
+            </div>
+    
+            <div class="paypal col-md-12">
+                <p>PayPal Account <span class="label label-success">Active</span></p><br>
+                <div class="col-md-2">paypal image comes here</div>
+                <div class="col-md-10">
+                    <p>Your PayPal account has been successfully integrated with the system. You can change your account settings by clicking the "Edit Account" button below.</p>
+                </div>    
+                <button class="paypal-edit-btn btn btn-default" ng-click="editPaypalAccount=true">Edit Account</button>
+                <br><br>
+
+                <div class="well paypal-edit-account-well col-md-12" ng-show="editPaypalAccount===true">
+                    <button class="paypal-edit-close btn btn-default"><span class="glyphicon glyphicon-remove"></span></button>
+                    <br>
+                    <h4>Add Paypal Account</h4>
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="form-group">
+                                <label>Api User Name<span style="color:red">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Api Password<span style="color:red">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Api Signature<span style="color:red">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox">Use Test mode</label>
+                            </div>
+                            <button class="btn btn-primary paypal-edit-account-save-btn">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+           <!--paypal div ends here-->
+
+           <div class="col-md-12 credit-card-gateway" >
+               <h4>Credit Card Gateway<span class="credit-card-gateway-title-span">&nbsp(only one gateway can be active at a time)</span></h4>
+               <div class="row">
+
+               <div class="col-md-5 credit-card-gateway-dotnet-config">
+                   <p>Authorize Dot Net Config</p>
+                   <div class="col-md-2"></div>
+                   <div class="col-md-10">
+                       <p>An Authorize.Net account can be added by clicking the "Add Account" button and filling out the required fields. This information can be obtained by creating an <a href="http://www.authorize.net/solutions/merchantsolutions/onlinemerchantaccount/">Authorize.Net account</a>.
+                       </p>
+                   </div>
+
+                   <button class="btn btn-default credit-card-gateway-dotnet-config-activate-btn">Activate</button>
+                   <button class="btn btn-primary credit-card-gateway-dotnet-config-addAccount-btn">Add Account</button>
+
+               </div>
+               <div class="col-md-5 credit-card-gateway-payflow-config" >
+                   <p>Payflow Pro Config &nbsp<label class="label label-success">Active</label></p>
+                   <div class="col-md-2"></div>
+                   <div class="col-md-10">
+                       <p>Your Payflow Pro Config account has been integrated with this system. You can change account settings by clicking on Edit account.</p>
+                       
+                       <button class="btn btn-default credit-card-gateway-payflow-config-editAccount-btn">Edit Account</button>
+                   </div>
+               </div>
+           </div>    
+             </div>
+        </div>
+    </body>
+</html>

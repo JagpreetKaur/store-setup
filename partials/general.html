@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        <link rel="stylesheet" type="text/css" href="css/general.css">
+        
+</head>
+
+
+<body>
+<div class="StoreGeneralSettings">
+
+<div class="container"> 
+<div class="well col-xs-10 col-sm-10 col-md-10 col-lg-10">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Standards and Formats
+                    </div>
+                    <div class="panel-body" ng-controller="generalController">
+                    <p>The following fields identify the default units of measurement used throughout the system. They also specify the prefix format to distinguish between sales order IDs and purchase order IDs.
+                    </p>
+                    <form action="" method="POST" role="form" name="generalForm" ng-submit="">
+                    <dl>
+                        <dd><input type="hidden" name="productStoreId" id="productStoreId" ng-model="generalSettings[0].productStoreId" class="form-control" value="" required="required"/></dd>
+                        
+                            <div class="row" >
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label for="defaultCurrencyUomId">Currency<span class="asterisk">*</span></label></dt>
+                                                    <dd><input type="text"id="defaultCurrencyUomId"  ng-model="generalSettings[0].currency" name="defaultCurrencyUomId" tabindex="1" class="form-control" value="" required="required" role="textbox"/></dd>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label for="weightUomId">Weight<span class="asterisk">*</span></label></dt>
+                                                    <dd><input type="text" id="weightUomId" ng-model="generalSettings[0].weight" name="weightUomId" tabindex="2" class="form-control" value="" required="required" /></dd>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label for="cogsMethodId">COGS Method<span class="asterisk">*</span></label></dt>
+                                                    <dd><input type="text" id="cogsMethodId" ng-model="generalSettings[0].cogsMethodId" name="cogsMethodId" disabled="true" class="form-control" value="" required="required" tabindex="3" /></dd>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group row">
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label for="salesOrderIdPrefix">Sales Order ID Prefix <span class="glyphicon glyphicon-question-sign" area-hidden="true" data-tooltip-content="If your order id prefix is SO then your Sales order Id will be SO followed by system generated sequence number. i.e. SO123045" data-tooltip-title="What is this?"></span></label></dt>
+                                                    <dd><input id="salesOrderIdPrefix" name="salesOrderIdPrefix" ng-model="generalSettings[0].salesOrderIdPrefix" class="form-control" value="" tabindex="3" /></dd>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label >Your Sales Order ID Will Look Like: <span class="text-muted">{{generalSettings[0].salesOrderIdPrefix}}{{generalSettings[0].salesOrderId}}</span></label></dt>
+                                                    
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label for="purchaseOrderIdPrefix">Sales Order ID Prefix <span class="glyphicon glyphicon-question-sign" area-hidden="true" data-tooltip-content="" data-tooltip-title="What is this?"></span></label></dt>
+                                                    <dd><input id="purchaseOrderIdPrefix" name="purchaseOrderIdPrefix" ng-model="generalSettings[0].purchaseOrderIdPrefix" class="form-control" value="" tabindex="4" /></dd>
+                                        </div>
+                                    
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <dt><label >Your Sales Order ID Will Look Like: <span class="text-muted">{{generalSettings[0].purchaseOrderIdPrefix}}{{generalSettings[0].purchaseOrderId}}</span></label></dt>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                          <dt><label for="reserveOrderEnumId">Inventory Reservation Algorithm</label></dt>
+                                                    <dd>
+
+                                                    <select name="reserveOrderEnumId" id="reserveOrderEnumId" class="form-control valid" tabindex="5">
+                      <option value="INVRO_ALT_SUPL" ng-model="generalSettings[1].alternateSupplier">Alternate Supplier</option>
+                      <option value="INVRO_FIFO_EXP">FIFO Expire</option>
+                      <option value="INVRO_FIFO_REC">FIFO Received</option>
+                      <option value="INVRO_GUNIT_COST">Greater Unit Cost</option>
+                      <option value="INVRO_LUNIT_COST">Less Unit Cost</option>
+                      <option value="INVRO_LIFO_EXP">LIFO Expire</option>
+                      <option value="INVRO_LIFO_REC">LIFO Received</option>
+                  </select>
+</dd>
+
+                                                   
+                                        </div>
+                                         </div>
+                                    <div class="form-group row">
+                                     
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <button type="submit" class="btn btn-primary paypal-edit-account-save-btn">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                    </dl>  
+                    
+                    </form>
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </div>
+        </div>      
+</div >
+</div>
+</body>
+</html>

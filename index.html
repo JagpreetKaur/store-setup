@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html ng-app="storeApp">
+    <head>
+    <title>Shop HWM Ecommerce Demo: Store Setup</title>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel='stylesheet' href='css\style.css' type='text/css' charset='utf-8'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="font/css/font-awesome.css" rel="stylesheet">
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+<script src="js/lib/angular-route.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+
+
+	</head>
+	<body>
+        <div class="container">
+            
+
+            <div class="row">
+	<div class="col-sm-12" >
+	<ul class="breadcrumb" id="rule1">
+        <li>
+   
+                  <a href="#" >
+                    <i id="rule5"class="icon-th icon-large"></i>
+                  </a>
+              </li>
+                    <li  id="rule3" class="no-separator divider-vertical"></li>
+<li  class="active no-separator"><h4 id="rule4">Store Setup</h4></li>
+<li class="pull-right ">
+                    <a href="#" title="Logout"><i class="icon-signout icon-large"></i></a>
+                  </li>
+
+                  <li class="no-separator pull-right  hidden-sm hidden-xs">
+                    <span class="pull-right" id="rule6"><i class="icon-search"></i></span>
+                  </li>
+    
+  
+</ul>
+
+
+</div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-12 header-col">
+<div id="main-content">
+  <div id="#progress-bar">
+  <div class="progress status">
+    <div class="progress-bar progress-bar-striped active" data-popover="#progress-popover" data-status-complete="98" style="width: 98%;"></div>
+
+  </div>
+  <span class="label label-default pull-right" id="rule7">98% complete</span>
+                
+                
+              
+            </div>
+          
+  </div>
+</div>
+          </div>
+          
+  
+  
+  <div  class="row">
+  <div class="col-lg-2 col-md-2">
+
+
+      
+      
+      
+      
+      <ul class="nav nav-stacked nav-pills" id="menu">
+        <li ><a href="#/store"><i class="icon-home"></i> Store</a></li>
+        <li><a href="#/payment"><i class="icon-credit-card"></i> Payment</a></li>
+        <li><a href="#/shipping"><i class="icon-truck"></i> Shipping</a></li>
+        <li><a href="#/taxes"><i class="icon-money"></i> Taxes</a></li>
+        <li><a href="#/general"><i class="icon-cog"></i> General</a></li>
+        <li><a href="#/sales"><i class="icon-cogs"></i> Sales Channel</a></li>
+        <li><a href="#/email"><i class="icon-envelope"></i> Email</a></li>
+        
+      </ul>
+      </div>
+    
+
+
+
+
+
+
+    <div class="col-lg-10 col-md-10">
+      <div ng-view>
+      </div>
+  </div>
+	
+
+</div>
+	</body>
+    </html>
